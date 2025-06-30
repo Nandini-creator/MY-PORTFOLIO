@@ -98,9 +98,18 @@ section{
     }
 
 }
+
 @media (max-width: 480px) {
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
   .navbar li a {
-    width: 90%;
+    width: auto; /* changed from 90% to auto to allow horizontal buttons */
   }
 
   .header h1, .header h3 {
@@ -116,20 +125,8 @@ section{
     margin: 5px auto;
     max-width: 1000px;
   }
-
-
-  .info-card {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
-  }
-
-  .info-card > * {
-    flex: 1 1 45%; 
-  }
 }
+
 
 
 
